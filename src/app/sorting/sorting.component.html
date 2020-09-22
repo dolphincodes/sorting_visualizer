@@ -1,0 +1,4 @@
+<div fxLayout="row" fxLayoutGap="50px">
+  <div *ngFor="let n of num" [ngStyle]="{'height.vh': n.value, 'background-color': n.color}"
+       style="width: 10vh; text-align: center; color: white; font-size: medium">{{n.value}}</div>
+</div>
