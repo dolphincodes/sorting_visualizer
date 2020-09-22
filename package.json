@@ -7,15 +7,19 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "doc": "ng build --prod --output-path docs --base-href /sorting_visualizer/"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.2",
+    "@angular/cdk": "^10.2.1",
     "@angular/common": "~10.1.2",
     "@angular/compiler": "~10.1.2",
     "@angular/core": "~10.1.2",
+    "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "~10.1.2",
+    "@angular/material": "^10.2.1",
     "@angular/platform-browser": "~10.1.2",
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
