@@ -7,14 +7,10 @@ import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core'
 })
 export class SortingComponent implements OnInit, OnChanges {
 
-  num = [
-    {value: 50, color: 'dodgerblue'},
-    {value: 6, color: 'dodgerblue'},
-    {value: 3, color: 'dodgerblue'},
-    {value: 12, color: 'dodgerblue'},
-    {value: 1, color: 'dodgerblue'}
-  ];
+  num: { value: number, color: string }[] = [];
   @Input() sort = false;
+  @Input() nums: object[] = [];
+  @Input() width = 5;
 
   constructor() {
   }
@@ -23,21 +19,30 @@ export class SortingComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.sort.currentValue) {
+    if (changes.sort) {
       this.bubbleSort();
     }
+
+    if (changes.nums) {
+      this.num = changes.nums.currentValue;
+    }
+
+    if (changes.width) {
+      this.width = changes.width.currentValue;
+    }
+
   }
 
   public bubbleSort(): void {
     let timestamp = 0;
-    for (let ptr1 = 0; ptr1 < this.num.length - 1; ptr1++) {
-      for (let ptr2 = 0; ptr2 < this.num.length - 1 - ptr1; ptr2++) {
-        (async () => {
+    (async () => {
+      for (let ptr1 = 0; ptr1 < this.num.length - 1; ptr1++) {
+        for (let ptr2 = 0; ptr2 < this.num.length - 1 - ptr1; ptr2++) {
           await this.time(ptr2, timestamp);
-        })();
-        timestamp++;
+          timestamp++;
+        }
       }
-    }
+    })();
   }
 
   public numberSwap(idx: number, timestamp: number): void {
@@ -64,8 +69,10 @@ export class SortingComponent implements OnInit, OnChanges {
           await this.changeColor(idx, 'red', 2);
           await this.numberSwap(idx, 3);
           this.changeColor(idx, 'green', 4);
+          await this.changeColor(idx, 'dodgerblue', 5);
+        } else {
+          await this.changeColor(idx, 'dodgerblue', 2);
         }
-        await this.changeColor(idx, 'dodgerblue', 5);
       })();
     }, 3000 * timestamp);
   }

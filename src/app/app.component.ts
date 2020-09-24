@@ -7,9 +7,4 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'sorting-visualizer';
-  trigger = false;
-
-  public sort(): void {
-    this.trigger = true;
-  }
 }

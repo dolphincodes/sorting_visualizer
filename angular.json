@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "sorting-visualizer"
+  "defaultProject": "sorting-visualizer",
+  "cli": {
+    "analytics": "2b2d3e44-a15a-4a12-ba94-fe6efb451074"
+  }
 }
