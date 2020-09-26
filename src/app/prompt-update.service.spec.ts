@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { PromptUpdateService } from './prompt-update.service';
+import {PromptUpdateService} from './prompt-update.service';
 
 describe('PromptUpdateService', () => {
   let service: PromptUpdateService;
