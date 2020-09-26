@@ -1,4 +1,5 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {MatSliderChange} from '@angular/material/slider';
 
 @Component({
   selector: 'app-main',
@@ -9,7 +10,7 @@ export class MainComponent implements OnInit {
 
   trigger = false;
   nums: { value: number, color: string }[] = [];
-  range = 0;
+  range = 5;
   disable = false;
 
   constructor(public cdRef: ChangeDetectorRef) {
@@ -24,15 +25,15 @@ export class MainComponent implements OnInit {
     this.trigger = true;
   }
 
-  public change(event: number | null): void {
-    this.range = Number(event);
+  public change(event: MatSliderChange): void {
+    this.range = Number(event.value);
     this.rand();
   }
 
   public rand(): void {
     this.nums = [];
     const min = 1;
-    const max = 100;
+    const max = 75;
     for (let idx = 0; idx <= this.range + 4; idx++) {
       const randomNum = Math.random() * (max - min) + min;
       this.nums.push({value: Math.round(randomNum), color: 'dodgerblue'});

@@ -68,7 +68,7 @@ export class SortingComponent implements OnInit, OnChanges {
           const temp = this.num[idx + 1];
           this.num[idx + 1] = this.num[idx];
           this.num[idx] = temp;
-        }, 600 * timestamp));
+        }, 400 * timestamp));
     }));
   }
 
@@ -79,7 +79,7 @@ export class SortingComponent implements OnInit, OnChanges {
         setTimeout(() => {
           this.num[idx].color = color;
           this.num[idx + 1].color = color;
-        }, 600 * timestamp));
+        }, 400 * timestamp));
 
     }));
 
@@ -102,7 +102,7 @@ export class SortingComponent implements OnInit, OnChanges {
             this.changeColor(idx, 'dodgerblue', 2);
           }
         }));
-      }, 3000 * timestamp);
+      }, 2000 * timestamp);
     }));
   }
 
