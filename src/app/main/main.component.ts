@@ -33,7 +33,7 @@ export class MainComponent implements OnInit {
   public rand(): void {
     this.nums = [];
     const min = 1;
-    const max = 75;
+    const max = 150;
     for (let idx = 0; idx <= this.range + 4; idx++) {
       const randomNum = Math.random() * (max - min) + min;
       this.nums.push({value: Math.round(randomNum), color: 'dodgerblue'});
