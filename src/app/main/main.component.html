@@ -308,7 +308,7 @@
   <!--  <span>Sort</span>-->
   <button (click)="rand()" [disabled]="disable" mat-button>Generate</button>
   <button (click)="sort()" [disabled]="disable" mat-button>Sort</button>
-  <mat-slider (valueChange)="change($event)" [disabled]="disable" max="100" min="1"></mat-slider>
+  <mat-slider (input)="change($event)" [disabled]="disable" max="100" min="1"></mat-slider>
   <!--    <div class="spacer"></div>-->
   <!--    <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">-->
   <!--      <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">-->

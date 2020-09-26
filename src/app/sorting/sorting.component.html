@@ -1,6 +1,7 @@
 <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="1px">
-  <div *ngFor="let n of num" [ngStyle]="{'height.vh': n.value, 'background-color': n.color, 'width.vh': 1}"
+  <div *ngFor="let n of num"
+       [ngStyle]="{'height.vh': n.value+2, 'background-color': n.color, 'width.vh': 5-width/22}"
        style="text-align: center; color: white; font-size: medium">
-    <!--    {{n.value}}-->
+    <p *ngIf="num.length < 50">{{n.value}}</p>
   </div>
 </div>
