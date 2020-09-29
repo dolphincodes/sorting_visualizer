@@ -1,15 +1,21 @@
 import {TestBed} from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {AppComponent} from './app.component';
+import {MainComponent} from './main/main.component';
+import {MatSliderModule} from '@angular/material/slider';
+import {SortingComponent} from './sorting/sorting.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatSliderModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        MainComponent,
+        SortingComponent
       ],
     }).compileComponents();
   });
