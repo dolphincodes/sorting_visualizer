@@ -28,8 +28,8 @@ export class SortingComponent implements OnInit, OnChanges {
         promise.finally(() => {
           this.sortStatus.emit({status: false});
           setTimeout(() => {
-            for (const idx of this.num) {
-              idx.color = 'green';
+            for (let idx = 0; idx < this.num.length; idx++) {
+              this.changeColor(idx, 'rgba(78, 216, 96, 0.8)', 7, false).then();
             }
           }, 10);
         });
@@ -64,30 +64,33 @@ export class SortingComponent implements OnInit, OnChanges {
             }
           });
         }
-        await this.changeColor(this.num.length - ptr1 - 1, 'rgba(169, 92, 232, 0.8)');
+        await this.changeColor(this.num.length - ptr1 - 1, 'rgba(169, 92, 232, 0.8)', 6, false);
       }
-      await this.changeColor(0, 'rgba(169, 92, 232, 0.8)');
+      await this.changeColor(0, 'rgba(169, 92, 232, 0.8)', 6, false);
     });
   }
 
-  public async numberSwap(idx: number): Promise<number> {
+  public async numberSwap(idx: number, timestamp: number): Promise<number> {
     return new Promise((resolve => {
       resolve(
         setTimeout(() => {
           const temp = this.num[idx + 1];
           this.num[idx + 1] = this.num[idx];
           this.num[idx] = temp;
-        }, 2));
+        }, 5 * timestamp * (75 - this.num.length)));
     }));
   }
 
-  public async changeColor(idx: number, color: string): Promise<number> {
+  public async changeColor(idx: number, color: string, timestamp: number, both = true): Promise<number> {
 
     return new Promise((resolve => {
       resolve(
         setTimeout(() => {
           this.num[idx].color = color;
-        }, 2));
+          if (both) {
+            this.num[idx + 1].color = color;
+          }
+        }, 5 * timestamp * (75 - this.num.length)));
 
     }));
 
@@ -97,20 +100,20 @@ export class SortingComponent implements OnInit, OnChanges {
 
     return new Promise((resolve => {
       setTimeout(() => {
-        resolve(this.changeColor(idx, 'green').then(() => {
+        resolve(this.changeColor(idx, 'rgba(78, 216, 96, 0.8)', 1).then(() => {
           if (this.num[idx].value > this.num[idx + 1].value) {
-            this.changeColor(idx, 'red').then(() => {
-              this.numberSwap(idx).then(() => {
-                this.changeColor(idx, 'green').then(() => {
-                  this.changeColor(idx, 'dodgerblue');
+            this.changeColor(idx, 'rgba(219, 57, 57, 0.8)', 2).then(() => {
+              this.numberSwap(idx, 3).then(() => {
+                this.changeColor(idx, 'rgba(78, 216, 96, 0.8)', 4).then(() => {
+                  this.changeColor(idx, 'rgba(66, 134, 244, 0.8)', 5);
                 });
               });
             });
           } else {
-            this.changeColor(idx, 'dodgerblue');
+            this.changeColor(idx, 'rgba(66, 134, 244, 0.8)', 2);
           }
         }));
-      }, 5);
+      }, 24 * (75 - this.num.length));
     }));
   }
 

@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
 
   trigger = false;
   nums: { value: number, color: string }[] = [];
-  range = 5;
+  range = 20;
   disable = false;
 
   constructor(public cdRef: ChangeDetectorRef) {
@@ -36,7 +36,7 @@ export class MainComponent implements OnInit {
     const max = 150;
     for (let idx = 0; idx <= this.range + 4; idx++) {
       const randomNum = Math.random() * (max - min) + min;
-      this.nums.push({value: Math.round(randomNum), color: 'dodgerblue'});
+      this.nums.push({value: Math.round(randomNum), color: 'rgba(66, 134, 244, 0.8)'});
     }
   }
 
