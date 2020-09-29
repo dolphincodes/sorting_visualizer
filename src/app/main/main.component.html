@@ -36,8 +36,8 @@
 </style>
 
 <div class="toolbar" role="banner">
-  <button (click)="rand()" [disabled]="disable" mat-button>Generate</button>
-  <button (click)="sort()" [disabled]="disable" mat-button>Sort</button>
+  <button (click)="rand()" [disabled]="disable" mat-button name="generate">Generate</button>
+  <button (click)="sort()" [disabled]="disable" mat-button name="sort">Sort</button>
   <mat-slider (input)="change($event)" [disabled]="disable" max="100" min="1" value="20"></mat-slider>
 </div>
 
