@@ -4,4 +4,4 @@ npm run test
 npm run doc
 cp docs/index.html docs/404.html
 mkdir docs/.well-known
-cp ./assetlinks.json docs/.well-known
+cp .well-known/assetlinks.json docs/.well-known
