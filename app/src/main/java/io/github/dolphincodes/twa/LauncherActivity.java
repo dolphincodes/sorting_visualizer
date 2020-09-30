@@ -17,18 +17,14 @@ package io.github.dolphincodes.twa;
 
 import android.net.Uri;
 
-
-
 public class LauncherActivity
-        extends com.google.androidbrowserhelper.trusted.LauncherActivity {
+    extends com.google.androidbrowserhelper.trusted.LauncherActivity {
 
-    @Override
-    protected Uri getLaunchingUrl() {
-        // Get the original launch Url.
-        Uri uri = super.getLaunchingUrl();
+  @Override
+  protected Uri getLaunchingUrl() {
+    // Get the original launch Url.
+    Uri uri = super.getLaunchingUrl();
 
-        
-
-        return uri;
-    }
+    return uri;
+  }
 }
