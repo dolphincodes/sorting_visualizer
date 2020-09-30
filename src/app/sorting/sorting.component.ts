@@ -8,7 +8,7 @@ import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges
 export class SortingComponent implements OnInit, OnChanges {
 
   num: { value: number, color: string }[] = [];
-  @Input() sort = false;
+  @Input() sort: { status: boolean; sortType: string; } | undefined;
   @Input() nums: object[] = [];
   @Input() width = 5;
   @Output() sortStatus = new EventEmitter();
@@ -21,9 +21,11 @@ export class SortingComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.sort) {
-      if (changes.sort.currentValue) {
+      if (changes.sort.currentValue.status) {
         const promise = new Promise((resolve => {
-          resolve(this.bubbleSort());
+          if (changes.sort.currentValue.sortType === 'bubbleSort'){
+            resolve(this.bubbleSort());
+          }
         }));
         promise.finally(() => {
           this.sortStatus.emit({status: false});
@@ -64,9 +66,9 @@ export class SortingComponent implements OnInit, OnChanges {
             }
           });
         }
-        await this.changeColor(this.num.length - ptr1 - 1, 'rgba(169, 92, 232, 0.8)', 6, false);
+        await this.changeColor(this.num.length - ptr1 - 1, 'rgba(169, 92, 232, 0.8)', 5, false);
       }
-      await this.changeColor(0, 'rgba(169, 92, 232, 0.8)', 6, false);
+      await this.changeColor(0, 'rgba(169, 92, 232, 0.8)', 5, false);
     });
   }
 
