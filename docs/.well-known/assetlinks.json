@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "io.github.dolphincodes.twa",
+                   "sha256_cert_fingerprints": ["39:A6:FC:09:67:FD:DC:28:52:F6:E2:03:ED:30:9F:FF:7A:35:DC:C3:3B:AF:06:79:87:67:DE:5B:9F:4E:F7:3C"] }
+    }]
