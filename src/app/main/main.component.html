@@ -36,12 +36,13 @@
 </style>
 
 <div class="toolbar" role="banner">
-  <button (click)="rand()" [disabled]="disable" mat-button name="generate">Generate</button>
-  <button (click)="sort()" [disabled]="disable" mat-button name="sort">Sort</button>
+  <button (click)="rand()" [disabled]="generateDisable" mat-button name="generate">Generate</button>
+  <button (click)="sortTrigger()" [disabled]="sortDisable" mat-button name="sort">Sort</button>
   <mat-slider (input)="change($event)" [disabled]="disable" max="100" min="1" value="20"></mat-slider>
+  <button (click)="sortTypeChange('bubbleSort')" [disabled]="disable" mat-button name="sort">Bubble Sort</button>
 </div>
 
 <div class="content" role="main">
-
-  <app-sorting (sortStatus)="buttonDisable($event)" [nums]="nums" [sort]="trigger" [width]="range"></app-sorting>
+  <app-sorting (sortStatus)="buttonDisable($event)" [nums]="nums" [sort]="{status: trigger, sortType: sortType}"
+               [width]="range"></app-sorting>
 </div>

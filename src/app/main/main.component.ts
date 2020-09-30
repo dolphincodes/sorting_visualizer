@@ -12,6 +12,10 @@ export class MainComponent implements OnInit {
   nums: { value: number, color: string }[] = [];
   range = 20;
   disable = false;
+  sortType = '';
+  sortDisable = true;
+  generateDisable = false;
+
 
   constructor(public cdRef: ChangeDetectorRef) {
   }
@@ -21,8 +25,14 @@ export class MainComponent implements OnInit {
     this.disable = false;
   }
 
-  public sort(): void {
+  public sortTrigger(): void {
     this.trigger = true;
+  }
+
+  public sortTypeChange(sortType: string): void {
+    this.sortType = sortType;
+    this.sortDisable = false;
+    this.disable = true;
   }
 
   public change(event: MatSliderChange): void {
@@ -42,7 +52,7 @@ export class MainComponent implements OnInit {
 
   public buttonDisable(event: { status: boolean }): void {
     this.trigger = false;
-    this.disable = event.status;
+    this.disable = this.sortDisable = this.generateDisable = event.status;
     this.cdRef.detectChanges();
   }
 
