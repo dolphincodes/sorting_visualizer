@@ -7,4 +7,3 @@
 -keep class io.github.dolphincodes.twa.Application { <init>(); }
 -keep class io.github.dolphincodes.twa.LauncherActivity { <init>(); }
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
-
