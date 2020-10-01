@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "io.github.dolphincodes.twa",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 2,
+        "versionName": "2",
+        "outputFile": "app-release-unsigned.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "io.github.dolphincodes.twa",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

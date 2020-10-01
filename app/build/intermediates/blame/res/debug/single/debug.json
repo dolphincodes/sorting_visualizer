@@ -1,0 +1,82 @@
+[
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-mdpi_splash.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-mdpi/splash.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_maskable.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xxxhdpi/ic_maskable.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-xhdpi_splash.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-xhdpi/splash.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/raw_web_app_manifest.json.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/raw/web_app_manifest.json"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_maskable.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xxhdpi/ic_maskable.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-anydpi_shortcut_legacy_background.xml.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-anydpi/shortcut_legacy_background.xml"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_maskable.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-mdpi/ic_maskable.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-hdpi_splash.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-hdpi/splash.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/xml_shortcuts.xml.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/xml/shortcuts.xml"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_maskable.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xhdpi/ic_maskable.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_maskable.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-hdpi/ic_maskable.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/xml_filepaths.xml.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/xml/filepaths.xml"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-xxhdpi_splash.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-xxhdpi/splash.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_splash.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/drawable-xxxhdpi/splash.png"
+  },
+  {
+    "merged": "/home/archangel/Desktop/sorting-visualizer/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+    "source": "/home/archangel/Desktop/sorting-visualizer/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+  }
+]
