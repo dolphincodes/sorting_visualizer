@@ -15,15 +15,10 @@
  */
 package io.github.dolphincodes.twa;
 
-
-
 public class Application extends android.app.Application {
-
-  
 
   @Override
   public void onCreate() {
-      super.onCreate();
-      
+    super.onCreate();
   }
 }
