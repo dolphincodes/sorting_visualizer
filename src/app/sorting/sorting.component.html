@@ -1,7 +1,8 @@
 <div fxLayout="row" fxLayoutAlign="center end" fxLayoutGap="1px">
   <div *ngFor="let n of num"
-       [ngStyle]="{'height.vh': (n.value+5)/2, 'background-color': n.color, 'width.vh': 5-width/22}"
-       style="text-align: center; color: white; font-size: smaller; border-radius: 1vh">
-    <p *ngIf="num.length < 50">{{n.value}}</p>
+       [ngStyle]="{'width.vh': 2.5-(width/num.length),'height.vh': (n.value+5)/2, 'background-color': n.color}"
+       style="text-align: center; color: white; font-size: smaller; border-radius: 1vh"
+  >
+    <p *ngIf="num.length < 50" [ngStyle.lt-md]="{'visibility': 'hidden'}">{{n.value}}</p>
   </div>
 </div>
