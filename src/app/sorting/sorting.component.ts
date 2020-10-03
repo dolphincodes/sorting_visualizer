@@ -23,7 +23,7 @@ export class SortingComponent implements OnInit, OnChanges {
     if (changes.sort) {
       if (changes.sort.currentValue.status) {
         const promise = new Promise((resolve => {
-          if (changes.sort.currentValue.sortType === 'bubbleSort'){
+          if (changes.sort.currentValue.sortType === 'bubbleSort') {
             resolve(this.bubbleSort());
           }
         }));
