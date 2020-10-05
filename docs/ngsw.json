@@ -47,9 +47,7 @@
   "dataGroups": [
     {
       "name": "Data fetch",
-      "patterns": [
-        "\\/.*"
-      ],
+      "patterns": ["\\/.*"],
       "strategy": "performance",
       "maxSize": 1000,
       "maxAge": 8640000000,
