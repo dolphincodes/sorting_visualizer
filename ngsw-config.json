@@ -30,9 +30,7 @@
   "dataGroups": [
     {
       "name": "Data fetch",
-      "urls": [
-        "/**"
-      ],
+      "urls": ["/**"],
       "cacheConfig": {
         "strategy": "performance",
         "maxSize": 1000,
