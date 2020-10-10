@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1602303166590,
+  "timestamp": 1602374037090,
   "index": "/sorting_visualizer/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/sorting_visualizer/favicon.ico",
         "/sorting_visualizer/index.html",
-        "/sorting_visualizer/main.13f2e0b0597c1806f60c.js",
+        "/sorting_visualizer/main.3ece471f563ac08ea9f3.js",
         "/sorting_visualizer/manifest.webmanifest",
         "/sorting_visualizer/polyfills.35a5ca1855eb057f016a.js",
         "/sorting_visualizer/runtime.acf0dec4155e77772545.js",
-        "/sorting_visualizer/styles.f6d546c026a264e540b5.css"
+        "/sorting_visualizer/styles.097c48a2773acb3e2bb5.css"
       ],
       "patterns": []
     },
@@ -47,10 +47,12 @@
   "dataGroups": [
     {
       "name": "Data fetch",
-      "patterns": ["\\/.*"],
+      "patterns": [
+        "\\/.*"
+      ],
       "strategy": "performance",
       "maxSize": 1000,
-      "maxAge": 8640000000,
+      "maxAge": 86400000000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -70,12 +72,12 @@
     "/sorting_visualizer/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/sorting_visualizer/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/sorting_visualizer/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/sorting_visualizer/index.html": "9dbfa15496323097d7bd75a3fb3650903ba740a6",
-    "/sorting_visualizer/main.13f2e0b0597c1806f60c.js": "0e591e61daae74145b521a5886f9c1c93c931c3d",
+    "/sorting_visualizer/index.html": "1692a7ce65a6217bd2e5bfec9380fdea08ea6114",
+    "/sorting_visualizer/main.3ece471f563ac08ea9f3.js": "c526bb4cb6b308526bceb9614d4817464185852b",
     "/sorting_visualizer/manifest.webmanifest": "5b3e601fa41e23281b234af0c529f1d655ba2f88",
     "/sorting_visualizer/polyfills.35a5ca1855eb057f016a.js": "578360d24ce37383f261c7ef63b1f822d28e8dde",
     "/sorting_visualizer/runtime.acf0dec4155e77772545.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/sorting_visualizer/styles.f6d546c026a264e540b5.css": "f7b7e3bc5642549f6800a23a347f16f75ae511ea"
+    "/sorting_visualizer/styles.097c48a2773acb3e2bb5.css": "229c5549a1d8093be13d0a06a62f5bf6748e8aa1"
   },
   "navigationUrls": [
     {

@@ -1,16 +1,26 @@
 <div fxFill fxLayout="column">
   <div [fxFlex.gt-md]="8" [fxFlex.lt-sm]="18" fxLayout="row" fxLayoutAlign="start center"
        style="background-color: #757575;">
-    <div fxFlex="50%" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap=".5%">
-      <button (click)="rand()" [disabled]="generateDisable" mat-button name="generate">Generate new array</button>
-      <button (click)="sortTrigger()" [disabled]="sortDisable" mat-button name="sort">Sort</button>
-      <p>Change array size & sorting speed</p>
+    <div fxFlex="50%" fxLayout.gt-sm="row"
+         fxLayout.lt-sm="column"
+         fxLayout.sm="column" fxLayoutAlign="space-evenly center" fxLayoutGap.gt-sm=".5%"
+         fxLayoutGap.lt-sm=".1%" fxLayoutGap.sm=".1%">
+      <button (click)="rand()" [disabled]="generateDisable"
+              color="accent" mat-stroked-button name="generate">
+        Generate new array
+      </button>
+      <div [matTooltipDisabled]="!sortDisable" matTooltip="Select one sorting method">
+        <button (click)="sortTrigger()" [disabled]="sortDisable"
+                color="accent" mat-stroked-button name="sort">
+          Sort
+        </button>
+      </div>
+      <div style="color: #69f0ae">Array size</div>
       <mat-slider (input)="change($event)" [disabled]="generateDisable" max="100" min="1" value="20"></mat-slider>
     </div>
     <div fxFlex="50%">
       <button (click)="sortTypeChange('bubbleSort')" [disabled]="disable"
-              [ngStyle]="{'color':disable === true ? '#101820' : 'white' }"
-              mat-button name="sort">Bubble Sort
+              color="accent" mat-stroked-button name="sort">Bubble Sort
       </button>
     </div>
   </div>
