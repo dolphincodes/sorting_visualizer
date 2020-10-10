@@ -1,10 +1,11 @@
 <div fxFill fxLayout="column">
   <div [fxFlex.gt-md]="8" [fxFlex.lt-sm]="18" fxLayout="row" fxLayoutAlign="start center"
        style="background-color: #757575;">
-    <div fxFlex="50%">
-      <button (click)="rand()" [disabled]="generateDisable" mat-button name="generate">Generate new !</button>
+    <div fxFlex="50%" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap=".5%">
+      <button (click)="rand()" [disabled]="generateDisable" mat-button name="generate">Generate new array</button>
       <button (click)="sortTrigger()" [disabled]="sortDisable" mat-button name="sort">Sort</button>
-      <mat-slider (input)="change($event)" [disabled]="disable" max="100" min="1" value="20"></mat-slider>
+      <p>Change array size & sorting speed</p>
+      <mat-slider (input)="change($event)" [disabled]="generateDisable" max="100" min="1" value="20"></mat-slider>
     </div>
     <div fxFlex="50%">
       <button (click)="sortTypeChange('bubbleSort')" [disabled]="disable"
