@@ -11,6 +11,8 @@ import {MainComponent} from './main/main.component';
 import {MatSliderModule} from '@angular/material/slider';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {environment} from '../environments/environment';
     FlexLayoutModule,
     MatButtonModule,
     MatSliderModule,
+    MatTooltipModule,
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [],
