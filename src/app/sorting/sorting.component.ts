@@ -107,12 +107,12 @@ export class SortingComponent implements OnInit, OnChanges {
             this.changeColor(idx, 'rgba(219, 57, 57, 0.8)', 2).then(() => {
               this.numberSwap(idx, 3).then(() => {
                 this.changeColor(idx, 'rgba(78, 216, 96, 0.8)', 4).then(() => {
-                  this.changeColor(idx, 'rgba(66, 134, 244, 0.8)', 5);
+                  this.changeColor(idx, '#0097A7', 5);
                 });
               });
             });
           } else {
-            this.changeColor(idx, 'rgba(66, 134, 244, 0.8)', 2);
+            this.changeColor(idx, '#0097A7', 2);
           }
         }));
       }, 24 * (75 - this.num.length));

@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayoutAlign="center end" fxLayoutGap="1px">
+<div fxLayout="row" fxLayoutAlign="center end" fxLayoutGap=".5%">
   <div *ngFor="let n of num"
        [ngStyle.gt-md]="{'width.vh': 15-(width/num.length*14),'height.vh': (n.value+5)/2, 'background-color': n.color}"
        [ngStyle.lt-md]="{'width.vh': 3-(width/num.length*2),'height.vh': (n.value+5)/3, 'background-color': n.color}"

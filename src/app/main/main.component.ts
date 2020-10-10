@@ -46,7 +46,7 @@ export class MainComponent implements OnInit {
     const max = 150;
     for (let idx = 0; idx <= this.range + 4; idx++) {
       const randomNum = Math.random() * (max - min) + min;
-      this.nums.push({value: Math.round(randomNum), color: 'rgba(66, 134, 244, 0.8)'});
+      this.nums.push({value: Math.round(randomNum), color: '#0097A7'});
     }
   }
 
